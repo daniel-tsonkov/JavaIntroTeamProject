@@ -10,7 +10,7 @@ public class Frame extends JFrame {
 	
 	public void init() {
 		setLayout(new GridLayout(1, 1, 0, 0));
-		
+		//Когато си направим Screen класа
 		Screen s = new Screen();
 		add(s);
 		
