@@ -3,7 +3,6 @@ public class Snake {
 
 	public static void main(String[] args) {
 		
-<<<<<<< HEAD
 		/* for now used just for testing purposes */
 		
 		CommonMethods.globalGrid0();
@@ -31,14 +30,4 @@ public class Snake {
 		}
 	}
 	
-	
-	
-	
-=======
-		// this is just a placeholder for now. Just testing
-		// GitHub commits from inside Eclipse. 
-
-	}
->>>>>>> 2eceeee58d6d49e2fc401c3db15327323e1ecc9a
-
 }
