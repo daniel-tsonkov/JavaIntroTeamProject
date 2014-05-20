@@ -25,7 +25,7 @@ public class SpawnObjects {
 		
 		for (int i = 0; i  < Globals.GridSizeY; i++) {
 			for (int j = 0; j  < Globals.GridSizeX; j++) {
-				if (Globals.GlobalGrid[j][i] == 0) {
+				if (Globals.GlobalGrid[j][i] == Globals.EmptySpace) {
 					emptySpaceCounter++;
 				}
 			}
@@ -37,7 +37,7 @@ public class SpawnObjects {
 	
 	public static int pickRandomEmptySpace(int upperLimit) {
 		Random randomNumber = new Random();
-		int returnRandomNumber = randomNumber.nextInt(upperLimit+1);
+		int returnRandomNumber = randomNumber.nextInt(upperLimit)+1;
 		return(returnRandomNumber);
 	}
 	
@@ -49,15 +49,17 @@ public class SpawnObjects {
 	
 	public static void putObjectOnGlobalGrid(int objectID, int position) {
 		
-		int counter = 0;
+		int counter = 1;
 		
 		for (int i = 0; i  < Globals.GridSizeY; i++) {
 			for (int j = 0; j  < Globals.GridSizeX; j++) {
-				if (Globals.GlobalGrid[j][i] == 0 && counter == position) {
+				
+				if (Globals.GlobalGrid[j][i] == Globals.EmptySpace && counter == position) {
 					Globals.GlobalGrid[j][i] = objectID;
 					return;
 				}
-				else {
+				
+				if (Globals.GlobalGrid[j][i] == Globals.EmptySpace) {
 					counter++;
 				}
 			}

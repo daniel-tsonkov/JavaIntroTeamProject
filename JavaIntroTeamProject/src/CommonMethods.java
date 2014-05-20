@@ -12,7 +12,7 @@ public class CommonMethods {
 		
 		for (int i = 0; i < Globals.GridSizeY; i++) {
 			for (int j = 0; j < Globals.GridSizeX; j++) {
-				Globals.GlobalGrid[j][i] = 0;
+				Globals.GlobalGrid[j][i] = Globals.EmptySpace;
 			}
 		}
 	}

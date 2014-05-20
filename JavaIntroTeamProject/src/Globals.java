@@ -7,11 +7,12 @@
 public class Globals {
 	
 	// constants - these are not changed during execution
-	public static int GridSizeX = 40;
-	public static int GridSizeY = 40;
+	public static int GridSizeX = 5;
+	public static int GridSizeY = 5;
+	public static int EmptySpace = 0;
 	public static int Wall = -1;
 	public static int Apple = -2;
-	public static int EmptySpace = 0;
+	
 	
 	// vars - these can be changed during execution
 	public static int[][] GlobalGrid = new int[GridSizeX][GridSizeY];
